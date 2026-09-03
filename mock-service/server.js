@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 
 const app = express();
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 app.use(cors());
 app.use(express.json());
@@ -80,6 +80,11 @@ app.get('/api/applications', (req, res) => {
   res.json(Object.values(applications));
 });
 
-app.listen(PORT, () => {
-  console.log(`Mock external service running on http://localhost:${PORT}`);
-});
+module.exports = app;
+
+// Only listen when run directly (local dev), not when used as a Vercel handler
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`Mock external service running on http://localhost:${PORT}`);
+  });
+}
