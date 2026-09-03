@@ -1,0 +1,39 @@
+# .NET build artifacts
+[Bb]in/
+[Oo]bj/
+*.user
+
+# SQLite database files
+*.db
+*.db-journal
+*.sqlite
+
+# Node.js
+node_modules/
+dist/
+.next/
+out/
+*.tsbuildinfo
+
+# Environment / local config
+.env
+.env.*
+!.env.example
+
+# Test / coverage
+coverage/
+*.coverage
+
+# IDE
+.vs/
+.idea/
+.vscode/
+*.suo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Separate repositories (kept in their own repos)
+/backend/
+/frontend/

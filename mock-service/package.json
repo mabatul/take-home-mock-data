@@ -1,0 +1,13 @@
+{
+  "name": "mock-external-service",
+  "version": "1.0.0",
+  "description": "Mock external service for loan applications",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "cors": "^2.8.5"
+  }
+}
