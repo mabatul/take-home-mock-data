@@ -2,8 +2,6 @@
 
 A complete code base for the **Loan Application** take-home test: a full-stack flow where a user fills a form, a rule engine decides approve/deny, approved applications are saved transactionally, and a background event sends the same data to an external (mock) service over HTTP.
 
-> **Demo video:** [Add your Loom/Jam/Figma recording link here]
-
 ## Stack
 
 | Part | Technology |
