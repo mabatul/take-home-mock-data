@@ -11,6 +11,11 @@ app.use(express.json());
 const customers = {};
 const applications = {};
 
+// Root endpoint
+app.get('/', (req, res) => {
+  res.json({ status: 'ok', service: 'mock-external-service' });
+});
+
 // Health check
 app.get('/health', (req, res) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });
